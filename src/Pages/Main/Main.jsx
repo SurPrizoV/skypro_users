@@ -57,6 +57,7 @@ export const Main = () => {
         <Paginated
           postsPerPage={postsPerPage}
           totalPostsCount={all.length}
+          currentPage={currentPage}
           setCurrentPage={setCurrentPage}
         />
 

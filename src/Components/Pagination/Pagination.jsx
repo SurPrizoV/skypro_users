@@ -2,9 +2,7 @@ import Pagination from "react-bootstrap/Pagination";
 import _ from "lodash";
 import s from "./Pagination.module.css";
 
-export const Paginated = ({ postsPerPage, totalPostsCount, setCurrentPage }) => {
-  let active = 1;
-
+export const Paginated = ({ postsPerPage, totalPostsCount, currentPage, setCurrentPage }) => {
   const pageCount = Math.ceil(totalPostsCount / postsPerPage);
   let pages = _.range(1, pageCount + 1);
 
@@ -16,7 +14,7 @@ export const Paginated = ({ postsPerPage, totalPostsCount, setCurrentPage }) => 
             <Pagination.Item
               onClick={() => setCurrentPage(pageNumber)}
               key={pageNumber}
-              active={pageNumber === active}
+              active={pageNumber === currentPage}
             >
               {pageNumber}
             </Pagination.Item>
