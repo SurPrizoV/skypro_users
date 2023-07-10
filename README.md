@@ -16,7 +16,7 @@ Redux-saga
 
 ### Клонировать репозиторий с помощью команды 
    
-   git clone https://github.com/MillyLu/test_posts.
+   git clone https://github.com/SurPrizoV/skypro_users
 
 ### Перейти в директорию с проектом при помощи терминала
 
